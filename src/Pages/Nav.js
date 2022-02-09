@@ -17,19 +17,30 @@ function Nav({ light }) {
   return (
     <div className="nav" style={navStyling}>
       <div className="nav-first">
+        {/* euka */}
         <Link to="/">
-          <button className="euka">Portfolio</button>
+          <button className="euka">Euka.</button>
         </Link>
-        {/* projects */}
-        <Link to="/Projects">
-          <button className="projects">Projects</button>
+        {/* Shop */}
+        <Link to="/Shop">
+          <button className="shop">Shop</button>
         </Link>
         {/* Shoecare */}
-        <Link to="/Contact">
-          <button className="contact">Contact</button>
+        <Link to="/Shoecare">
+          <button className="shoecare">Shoecare</button>
         </Link>
         <Link to="/About">
           <button className="about-link">About</button>
+        </Link>
+      </div>
+      <div className="nav-last">
+        {/* Signup */}
+        <Link to="/Signup">
+          <button className="sign-up">sign up</button>
+        </Link>
+        {/* Login */}
+        <Link to="/Login">
+          <button className="login">login</button>
         </Link>
       </div>
     </div>

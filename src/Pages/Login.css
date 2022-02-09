@@ -1,0 +1,119 @@
+.login-outer {
+  width: 100%;
+  height: 1010px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.login-top-bar {
+  width: 100%;
+  height: 130px;
+}
+.login-left-side {
+  width: 30%;
+  height: 785px;
+
+  display: flex;
+  align-items: flex-start;
+}
+.login-left-side-border {
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid rgb(175, 175, 175);
+}
+
+.login-right-side {
+  margin-top: -50px;
+  width: 70%;
+  height: 45%;
+}
+.login-create-account-text {
+  width: 85%;
+  height: 50px;
+  font-size: 30px;
+  position: relative;
+  top: 70px;
+  left: 95px;
+  margin-bottom: 20px;
+}
+.login-info-outer {
+  width: 85%;
+  height: 45%;
+  position: relative;
+  top: 70px;
+  left: 95px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.login-first-name-text,
+.login-last-name-text,
+.login-email-text,
+.login-password-text {
+  margin-top: 40px;
+  width: 514px;
+  height: 40px;
+  font-size: 25px;
+}
+.login-first-name-last-name-outer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-email-box,
+.login-password-box {
+  margin-top: -60px;
+  width: 514px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 15px;
+  letter-spacing: 1px;
+}
+.login-birthday-text {
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+
+  font-size: 25px;
+}
+.login-birthday-box {
+  margin-right: 514px;
+}
+
+.login-bottom {
+  width: 86%;
+  height: 50px;
+  border-top: 1px solid rgb(173, 173, 173);
+  position: relative;
+  top: 120px;
+  padding-top: 60px;
+  margin: 0 auto;
+  /* background-color: lightgray; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-already-have-account {
+  width: 855px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.login-create-account {
+  width: 25%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

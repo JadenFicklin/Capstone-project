@@ -1,0 +1,97 @@
+.shoecare-checkout-outer {
+  width: 100%;
+  height: 1659px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shoecare-checkout-outer-four-images-container {
+  width: 1237px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shoecare-checkout-shoe {
+  height: 822px;
+  width: 614px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+.shoecare-checkout-image-one {
+  background-image: url("../assets/images/product\ 2.PNG");
+}
+.shoecare-checkout-image-two {
+  background-image: url("../assets/images/product\ 1.PNG");
+}
+.shoecare-checkout-image-three {
+  background-image: url("../assets/images/product\ 3.PNG");
+}
+.shoecare-checkout-image-four {
+  background-image: url("../assets/images/product\ 4.PNG");
+}
+.shoecare-checkout-item-info {
+  width: 487px;
+  height: 106px;
+  font-size: 30px;
+}
+.shoecare-checkout-outer-input {
+  width: 665px;
+  height: 100%;
+  padding: 219px 73px 375px 73px;
+}
+.shoecare-checkout-input-box {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 514px;
+  height: 62px;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.first-name,
+.last-name,
+.country,
+.state,
+.zip {
+  width: 249px;
+}
+.last-name,
+.state {
+  margin-left: 16px;
+}
+.city {
+  width: 300px;
+}
+.shoecare-checkout-type {
+  color: rgb(143, 143, 143);
+  font-size: 13px;
+}
+.shoecare-checkout-name {
+  font-size: 28px;
+  margin: 10px 0px;
+}
+.shoecare-checkout-price {
+  font-size: 14px;
+}
+.shoecare-checkout-button {
+  width: 30%;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 40px;
+  color: rgb(201, 201, 201);
+  font-weight: 600;
+  background-color: black;
+  transition: 0.2s;
+}
+.shoecare-checkout-button:hover {
+  color: rgb(255, 255, 255);
+}
+.shoecare-checkout-paragraph {
+  font-size: 14px;
+  margin: 20px 0px;
+}

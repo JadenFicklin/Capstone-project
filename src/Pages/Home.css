@@ -1,5 +1,303 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    top: -50px;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+    animation-delay: 2s;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+  }
+}
+
+@keyframes fadeInAnimationEU {
+  0% {
+    opacity: 1;
+    left: 160px;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+    top: 0;
+    font-weight: 700;
+    font-size: 160px;
+    letter-spacing: 2px;
+  }
+}
+
+.outer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* image span */
+.span-image {
+  width: 100vw;
+  height: 1010px;
+  background-image: url("../assets/images/picture.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+
+.image-span-text {
+  width: 600px;
+  height: 450px;
+  position: relative;
+  top: 320px;
+  left: 220px;
+}
+
+.you-shop {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 100;
+  font-size: 48px;
+  letter-spacing: 3px;
+  margin-bottom: -20px;
+  position: relative;
+}
+
+.eureka {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 160px;
+  letter-spacing: 2px;
+  position: relative;
+}
+.eu {
+  position: relative;
+  animation: fadeInAnimationEU ease 1s;
+}
+
+.r {
+  transition: 4s;
+  animation: fadeInAnimation 2s;
+  animation-iteration-count: 1;
+}
+.e {
+  transition: 3s;
+  animation: fadeInAnimation 2s;
+  animation-iteration-count: 1;
+}
+
+.span-button {
+  position: relative;
+  left: 420px;
+  top: 10px;
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 170px;
+  height: 42px;
+  color: white;
+  border: none;
+  letter-spacing: 2px;
+}
+
+/* shop men - shop women - about */
+#outer-shop {
+  /* background-color: gray; */
+  width: 100vw;
+  height: 743px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-women-image,
+.shop-men-image,
+.who-we-are-image {
+  width: 320px;
+  height: 459px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+
+.shop-women-text,
+.shop-men-text,
+.who-we-are-text {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 203px;
+  height: 100px;
+  padding: 40px;
+  font-size: 18px;
+  transition: 0.6s;
+}
+.shop-men-text {
+  transition: 0.9s;
+}
+.who-we-are-text {
+  transition: 1.2s;
+}
+
+.shop-women-button,
+.shop-men-button,
+.who-we-are-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  letter-spacing: 0px;
+  border-bottom: 1px solid rgb(99, 99, 99);
+}
+
+.shop-women-image {
+  background-image: url("../assets/images/Capture-fix.PNG");
+  transition: 0.6s;
+}
+.shop-men-image {
+  background-image: url("../assets/images/6925962f_153d\ \(2\).jpg");
+  transition: 0.9s;
+}
+.who-we-are-image {
+  background-image: url("../assets/images/Journal_Our_Journey_400x.jpg");
+  transition: 1.2s;
+}
+
+/* best sellers */
+.our-best-sellers {
+  width: 100%;
+  height: 87px;
+  font-size: 47px;
+  margin-left: 47px;
+}
+
+.outer-best-sellers {
+  width: 100%;
+  height: 839px;
+  margin-left: 47px;
+  margin-right: 47px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.first-option-image,
+.second-option-image,
+.third-option-image {
+  width: 547px;
+  height: 657px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+.first-option-image {
+  background-image: url("../assets/images/Capture.PNG");
+  transition: 0.6s;
+}
+.second-option-image {
+  background-image: url("../assets/images/Capture3.PNG");
+  transition: 0.9s;
+}
+.third-option-image {
+  background-image: url("../assets/images/Capture\ 2.PNG");
+  transition: 1.2s;
+}
+#first-option-text,
+.second-option-text,
+.third-option-text {
+  width: 547px;
+  height: 160px;
+}
+
+/* shoecare and locations */
+.outer-shoecare-locations {
+  width: 100%;
+  height: 805px;
+  margin-left: 47px;
+  margin-right: 47px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shoecare-image,
+.location-image {
+  width: 881px;
+  height: 606px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+
+.shoecare-image {
+  background-image: url("../assets/images/Capture\ 4.PNG");
+  transition: 0.6s;
+}
+
+.location-image {
+  background-image: url("../assets/images/Capture5.PNG");
+  transition: 0.9s;
+}
+
+.shoecare-text,
+.location-text {
+  width: 881px;
+  height: 156px;
+}
+.find-store,
+#shoecare-button {
+  width: 881px;
+  height: 50px;
+  letter-spacing: 0px;
+}
+
+/* bottom */
+
+.outer-bottom {
+  background-color: #20254b;
+  width: 100%;
+  height: 919px;
+  padding: 95px 132px 0px 132px;
+  display: flex;
+}
+
+.customer-care-text,
+.our-world-text,
+.follow-text {
+  width: 33%;
+  height: 800px;
+  color: white;
+}
+
+.bottom-text-header {
+  padding-bottom: 50px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.bottom-text {
+  padding: 10px 0px 10px 0px;
+  font-size: 19px;
 }

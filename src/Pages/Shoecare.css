@@ -1,0 +1,117 @@
+.shoecare-outer {
+  height: 2646px;
+}
+
+.shoecare-span-image {
+  width: 100%;
+  height: 1010px;
+  background-image: url("../assets/images/web_1920x.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  transition: 0.6s;
+}
+.shoecare-image-span-text {
+  position: relative;
+  top: 880px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 7px;
+}
+
+.shoecare-text-outer {
+  width: 1826px;
+  height: 360px;
+  margin: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+.shoecare-text-one,
+.shoecare-text-two {
+  width: 890px;
+  height: 300px;
+
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shoecare-text-header {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  padding: 30px 0px 10px 0px;
+  font-weight: 700;
+}
+.shoecare-text-one-paragraph {
+  width: 100%;
+  height: 200px;
+}
+
+.shoecare-bottom-outer {
+  width: 1826px;
+  height: 1126px;
+  margin: 39px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shoecare-bottom-left-picture {
+  width: 887px;
+  height: 1126px;
+  background-image: url("../assets/images/Capture\ 4.PNG");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  transition: 0.6s;
+}
+.shoecare-bottom-right-container-outer {
+  width: 887px;
+  height: 1126px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shoecare-bottom-right-containers-text {
+  width: 887px;
+  height: 574px;
+}
+.shoecare-text-bottom {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shoecare-text-bottom-paragraph {
+  font-size: 28px;
+  color: black;
+  font-weight: 400;
+}
+
+.shoecare-bottom-right-containers-bottom-left-picture,
+.shoecare-bottom-right-containers-bottom-right-picture {
+  width: 413px;
+  height: 552px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+.shoecare-bottom-right-containers-bottom-left-picture {
+  background-image: url("../assets/images/solutions.PNG");
+  transition: 0.6s;
+}
+.shoecare-bottom-right-containers-bottom-right-picture {
+  background-image: url("../assets/images/emmanuel-boldo-6dvunqwwkek-unsplash.jpg");
+  transition: 0.9s;
+}
