@@ -2,7 +2,8 @@ import "./Home.css";
 import React from "react";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+
 import useScrollPosition from "../hooks/useScrollPosition";
 
 function Home() {
@@ -30,6 +31,8 @@ function Home() {
   const imageThreeStyling =
     scrollPosition < 1800 ? imageChangeStyling : imageStaticStyling;
   console.log("test");
+
+  const [shoes, setShoes] = useState([]);
 
   return (
     <>
@@ -86,7 +89,7 @@ function Home() {
         {/* <!-- our best sellers --> */}
         <div className="our-best-sellers">Our best sellers</div>
         <div className="outer-best-sellers">
-          <Link to="/Checkout">
+          <Link to={`/Checkout`}>
             <div className="first-option-image" style={imageTwoStyling}></div>
           </Link>
           <Link to="/Checkout">

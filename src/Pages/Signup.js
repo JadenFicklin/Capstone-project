@@ -28,9 +28,19 @@ function Signup() {
     });
   };
 
+  const createNewUser = (values) => {
+    let users = JSON.parse(window.localStorage.getItem("users"));
+    !users && (users = []);
+    users.push(values);
+    window.localStorage.setItem("users", JSON.stringify(users));
+  };
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    setErrors(validation(values));
+    const validations = validation(values);
+    const hasNoErrors = Object.keys(validations).length === 0;
+    setErrors(validations);
+    hasNoErrors && createNewUser(values);
   };
 
   return (

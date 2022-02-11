@@ -4,34 +4,22 @@ import { useEffect } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
-const users = [
-  {
-    firstname: "jaden",
-    lastname: "ficklin",
-    email: "jadenficklin@gmail.com",
-    username: "jado21",
-    password: "password",
-  },
-  {
-    firstname: "taryn",
-    lastname: "ficklin",
-    email: "tarynficklin@gmail.com",
-    username: "taryn21",
-    password: "password",
-  },
-];
-
 function Login() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   //get value of what user is putting for password and username
+  const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
   const [values, setValues] = useState({
     username: "",
     password: "",
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const localStorageUsers =
+      JSON.parse(window.localStorage.getItem("users")) || [];
+
+    setUsers(localStorageUsers);
+  }, []);
 
   const validate = () => {
     const user = users.find((user) => user.username === values.username);
@@ -39,12 +27,12 @@ function Login() {
     if (user?.username) {
       const passwordMatches = values.password === user.password;
       if (passwordMatches) {
-        return "logged in";
+        return alert("logged in");
       } else {
-        return "error";
+        return alert(error);
       }
     } else {
-      return "user does not exist";
+      return alert("user does not exist");
     }
   };
 
