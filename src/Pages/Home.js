@@ -29,6 +29,7 @@ function Home() {
 
   const imageThreeStyling =
     scrollPosition < 1800 ? imageChangeStyling : imageStaticStyling;
+  console.log("test");
 
   return (
     <>
