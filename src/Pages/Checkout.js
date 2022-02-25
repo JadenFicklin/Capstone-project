@@ -18,6 +18,7 @@ function Checkout() {
 
   useEffect(() => {
     getShoe();
+    // eslint-disable-next-line
   }, []);
 
   const { id } = useParams();

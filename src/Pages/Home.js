@@ -2,7 +2,7 @@ import "./Home.css";
 import React from "react";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 import useScrollPosition from "../hooks/useScrollPosition";
 
@@ -30,9 +30,6 @@ function Home() {
 
   const imageThreeStyling =
     scrollPosition < 1800 ? imageChangeStyling : imageStaticStyling;
-  console.log("test");
-
-  const [shoes, setShoes] = useState([]);
 
   return (
     <>
@@ -49,7 +46,7 @@ function Home() {
               <span className="k">k</span>
               <span className="a">a</span>
             </span>
-            <Link to="/Shop">
+            <Link to="">
               <button className="span-button">SHOP NOW</button>
             </Link>
           </div>
@@ -57,31 +54,31 @@ function Home() {
 
         {/* <!-- shop women, shop men, about us --> */}
         <div id="outer-shop">
-          <Link to="/Shop">
+          <Link to="">
             <div className="shop-women-image" style={imageStyling}></div>
           </Link>
           <div className="shop-women-text" style={textStyling}>
             Shop for Women
-            <Link to="/Shop">
-              <a className="shop-women-button">Shop now</a>
+            <Link to="">
+              <span className="shop-women-button">Shop now</span>
             </Link>
           </div>
-          <Link to="/Shop">
+          <Link to="">
             <div className="shop-men-image" style={imageStyling}></div>
           </Link>
           <div className="shop-men-text" style={textStyling}>
             Shop for Men
-            <Link to="/Shop">
-              <a className="shop-men-button">Shop now</a>
+            <Link to="">
+              <span className="shop-men-button">Shop now</span>
             </Link>
           </div>
-          <Link to="/Shoecare">
+          <Link to="">
             <div className="who-we-are-image" style={imageStyling}></div>
           </Link>
           <div className="who-we-are-text" style={textStyling}>
             Shoecare solutions
-            <Link to="/Shoecare">
-              <a className="who-we-are-button">Shop now</a>
+            <Link to="">
+              <span className="who-we-are-button">Shop now</span>
             </Link>
           </div>
         </div>
@@ -92,15 +89,15 @@ function Home() {
           <Link to={`/Checkout`}>
             <div className="first-option-image" style={imageTwoStyling}></div>
           </Link>
-          <Link to="/Checkout">
+          <Link to="">
             <div className="second-option-image" style={imageTwoStyling}></div>
           </Link>
-          <Link to="/Checkout">
+          <Link to="">
             <div className="third-option-image" style={imageTwoStyling}></div>
           </Link>
           <div id="first-option-text">
             Metal-free tanned leather <br />
-            LT 01 VEGEA White <br />
+            LT 01 VEGEspan White <br />
             $229
           </div>
           <div className="second-option-text">
@@ -117,25 +114,25 @@ function Home() {
 
         {/* <!-- shoecare and locations --> */}
         <div className="outer-shoecare-locations">
-          <Link to="/About">
+          <Link to="">
             <div className="shoecare-image" style={imageThreeStyling}></div>
           </Link>
-          <Link to="/About">
+          <Link to="">
             <div className="location-image" style={imageThreeStyling}></div>
           </Link>
           <div className="shoecare-text">
             Who we are, our journey explained
-            <Link to="/About">
+            <Link to="">
               <div className="shoecare-btn">
-                <a id="shoecare-button">Read</a>
+                <span id="shoecare-button">Read</span>
               </div>
             </Link>
           </div>
           <div className="location-text">
             locations
             <div className="store-btn">
-              <Link to="/About">
-                <a className="find-store">Find store</a>
+              <Link to="">
+                <span className="find-store">Find store</span>
               </Link>
             </div>
           </div>

@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import "./Signup.css";
 import validation from "./validation";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 function Signup() {
   useEffect(() => {

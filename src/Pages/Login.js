@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Login() {
   //get value of what user is putting for password and username
   const [users, setUsers] = useState([]);
-  const [error, setError] = useState("");
+  const [error] = useState("");
   const [values, setValues] = useState({
     username: "",
     password: "",
