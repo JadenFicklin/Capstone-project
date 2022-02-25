@@ -2,8 +2,6 @@ import "./ShoecareCheckout.css";
 import React from "react";
 import Nav from "./Nav";
 import { useEffect } from "react";
-import useScrollPosition from "../hooks/useScrollPosition";
-import { Link } from "react-router-dom";
 
 function ShoecareCheckout() {
   useEffect(() => {
